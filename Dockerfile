@@ -5,7 +5,7 @@ RUN apk add --no-cache git python make openssl tar gcc wget
 COPY yapi.tar.gz /home
 
 
-RUN mkdir -p /home && mkair -p /api  && cd /home && wget https://github.com/YMFE/yapi/archive/v1.9.1.tar.gz  && tar -zvxf v1.9.1.tar.gz && mv yapi-1.9.1 /api/vendors
+RUN cd /home &&  tar -zvxf yapi.tar.gz && mkdir /api &&  mv yapi-1.9.1 /api/vendors
 
 #RUN cd /home && tar zxvf yapi.tar.gz && mkdir /api && mv /home/yapi-1.8.0 /api/vendors
 
