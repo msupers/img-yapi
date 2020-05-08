@@ -10,7 +10,7 @@ RUN cd /home &&  tar -zvxf yapi.tar.gz && mkdir /api &&  mv yapi-1.9.1 /api/vend
 #RUN cd /home && tar zxvf yapi.tar.gz && mkdir /api && mv /home/yapi-1.8.0 /api/vendors
 
 RUN cd /api/vendors && \
-    npm install --production --registry https://registry.npm.taobao.org
+    npm install --production --registry http://registry.npmjs.org
 
 FROM node:12-alpine
 
